@@ -23,7 +23,7 @@ public class checklogin extends HttpServlet {
      */
     public checklogin() {
         super();
-        // TODO Auto-generated constructor stub
+        // TODO Auto-generated constructor stub1
     }
 
 	/**
