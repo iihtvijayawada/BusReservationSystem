@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+<script type="text/javascript">
+		function validate()
+		{
+			if(document.myform.un.value=="")
+			{
+				//alert("Please provide your username");
+				 document.getElementById("name").innerHTML = "fill the field";
+				document.myform.un.focus();
+				return false;
+			}
+            if(document.myform.pwd.value=="")
+            {
+                //alert("Please provide your password");
+                document.getElementById("pwd").innerHTML = "fill the field";
+                document.myform.pwd.focus();
+                return false;
+            }
+            return(true);
+		}
+	</script>
+<style type="text/css">
+.header1{
+font-size:  20 px;
+font-family: verdana;
+color: white;
+}
+.formheader{
+color: white;
+font-size: 40 px;
+font-family: verdana;
+}
+body {
+	background-color: purple;
+}
+</style>
+</head>
+<body>
+<div  align="center">
+<div style="width: auto;height: 500 px;">
+<h1 align="center"class="header1">Online Bus Reservation System</h1>
+<h1 align="center"class="header1">LOGIN HERE</h3>
+</div>
+<form action="checklogin" method="get" name="myform" onsubmit="return(validate());" class="formheader">
+<table cellspacing="5" cellpadding="5" border="1">
+<img align="right"alt="bus" src="bus.jpg" height="400" width="600">
+<pre>
+<tr>
+     			<td align="right" style="font-size:200%">USERNAME</td>
+     			<td><input style="font-size:100%"type="text" name="un"/>
+     			<br>
+     			<span id="name" style="color:black;"></span>
+     			</td>
+     		</tr>
+               <tr>
+                    <td align="right" style="font-size:200%">PASSWORD</td>
+                    <td><input style="font-size:100%"type="text" name="pwd"/><br>
+                    <span id="pwd" style="color:black;"></span>
+                    </td>
+               </tr>
+               <tr>
+     			<td colspan="2" align="center"><input style="font-size:200%" type="submit" value="Login"/></td>
+     		</tr>
+     		</table>
+			<a href="reg.html" class="formheader"style="font-size:200%">REGISTER HERE</a>
+			</pre>
+</form>
+</div>
+     </div>
+     </table>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Booking Details</title>
+<script type="text/javascript">
+		function validate()
+		{
+			 if(document.myform.Source.value=="")
+               {
+                    //alert("Please provide your source");
+                    document.getElementById("src").innerHTML = "fill the field";
+                    document.myform.Source.focus();
+                    return false;
+               }
+            if(document.myform.Destination.value=="")
+			{
+				//alert("Please provide your destination");
+				document.getElementById("dst").innerHTML = "fill the field";
+				document.myform.age.focus();
+				return false;
+			}
+			return(true);
+		}
+	</script>
+<style type="text/css">
+.header1{
+font-size:  25 px;
+font-family: verdana;
+color: white;
+}
+.formheader{
+color: white;
+font-size: 75 px;
+font-family: verdana;
+}
+body {
+	background-color: grey ;
+}
+</style>
+</head>
+<body>
+<div  align="center">
+<div style="width: auto;height: 200 px;">
+<h1 class="header1">Online Bus Reservation System</h1>
+</div>
+<div>
+<h1 class="header1">BOOK HERE</h1>
+<table>
+<tr>
+<td>
+<form action="registration" method="get" name="myform" onsubmit="return(validate());" class="formheader">
+     	<table cellspacing="2" cellpadding="2" border="1">
+     		<tr>
+     			<td align="right" style="font-size:150%">SOURCE</td>
+     			<td><input type="text" name="Source"/>
+     			<br>
+     			<span id="src" style="color:black;"></span>
+     			</td>
+     		</tr>
+               <tr>
+                    <td align="right" style="font-size:150%">DESTINATION</td>
+                    <td><input type="text" name="Destination"/><br>
+                    <span id="dst" style="color:black;"></span>
+                    </td>
+               </tr>
+               <tr>
+                    <td align="right" style="font-size:150%">No of Seats</td>
+                    <td><input type="number" name="No of Seats "/><br>
+                    <span id="noofseats" style="color:black;"></span></td>
+               </tr>
+     		<tr>
+     			<td colspan="2" align="center"><input type="submit" value="Confirm Booking"/></td>
+     		</tr>
+     	</table>
+     	 </form>
+     </td>
+     <td>
+     <img alt="bus" src="snd.jpg" height="500" width="600">
+     </td>
+     </tr>
+     </table>
+     </div>
+     </div>
+ </body>
+</html>

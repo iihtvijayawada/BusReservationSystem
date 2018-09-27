@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Form</title>
+<script type="text/javascript">
+		function validate()
+		{
+			if(document.myform.un.value=="")
+			{
+				//alert("Please provide your username");
+				
+				 document.getElementById("name").innerHTML = "fill the field";
+				document.myform.un.focus();
+				return false;
+			}
+               if(document.myform.pwd.value=="")
+               {
+                    //alert("Please provide your password");
+                    document.getElementById("pwd").innerHTML = "fill the field";
+                    document.myform.pwd.focus();
+                    return false;
+               }
+               if(document.myform.firstname.value=="")
+               {
+                    //alert("Please provide your firstname");
+                    document.getElementById("fname").innerHTML = "fill the field";
+                    document.myform.firstname.focus();
+                    return false;
+               }
+               if(document.myform.lastname.value=="")
+               {
+                   // alert("Please provide your lastname");
+                   document.getElementById("lname").innerHTML = "fill the field";
+                    document.myform.lastname.focus();
+                    return false;
+               }
+			if(document.myform.mail.value=="")
+			{
+				//alert("Please provide your email");
+				document.getElementById("email").innerHTML = "fill the field";
+				document.myform.mail.focus();
+				return false;
+			}
+			if(document.myform.mail1.value=="")
+			{
+				//alert("Please provide your email");
+				document.getElementById("email1").innerHTML = "fill the field";
+				document.myform.mail1.focus();
+				return false;
+			}
+			if(document.myform.age.value=="")
+			{
+				//alert("Please provide your email");
+				document.getElementById("age").innerHTML = "fill the field";
+				document.myform.age.focus();
+				return false;
+			}
+			if(document.myform.gender.value=="")
+			{
+				//alert("Please provide your email");
+				document.getElementById("gender").innerHTML = "fill the field";
+				document.myform.gender.focus();
+				return false;
+			}
+	
+			if(document.myform.aadharno.value=="")
+               {
+                   // alert("Please provide your aadharno");
+                    document.getElementById("aadharno").innerHTML = "fill the field";
+                    document.myform.aadharno.focus();
+                    return false;
+               }
+               if(document.myform.mobile.value=="")
+               {
+                    //alert("Please provide your mobile no");
+                    document.getElementById("mobile").innerHTML = "fill the field";
+                    document.myform.mobile.focus();
+                    return false;
+               }
+               if(document.myform.address.value=="")
+   			{
+   				//alert("Please provide your email");
+   				document.getElementById("address").innerHTML = "fill the field";
+   				document.myform.address.focus();
+   				return false;
+   			}
+               if(document.myform.city.value=="")
+   			{
+   				//alert("Please provide your email");
+   				document.getElementById("city").innerHTML = "fill the field";
+   				document.myform.city.focus();
+   				return false;
+   			}
+               if(document.myform.state.value=="")
+   			{
+   				//alert("Please provide your email");
+   				document.getElementById("email1").innerHTML = "fill the field";
+   				document.myform.state.focus();
+   				return false;
+   			}
+			return(true);
+		}
+	</script>
+
+
+<style type="text/css">
+
+.header1{
+
+font-size:  20 px;
+font-family: verdana;
+color: white;
+
+
+
+}
+
+.formheader{
+
+color: white;
+font-size: 15 px;
+font-family: verdana;
+
+}
+
+
+body {
+	
+	
+	background-color: tomato;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div  align="center">
+<div style="width: auto;height: 200 px;">
+
+<h1 class="header1">Online Bus Reservation System</h1>
+
+</div>
+
+<div>
+
+<h1 class="header1">User Registration Form</h1>
+
+<table>
+<tr>
+<td>
+
+<form action="registration" method="get" name="myform" onsubmit="return(validate());" class="formheader">
+     	<table cellspacing="2" cellpadding="2" border="1">
+     		<tr>
+     			<td align="right">username</td>
+     			<td><input type="text" name="un"/>
+     			<br>
+     			<span id="name" style="color:black;"></span>
+     			
+     			
+     			
+     			</td>
+     		</tr>
+               <tr>
+                    <td align="right">password</td>
+                    <td><input type="text" name="pwd"/><br>
+                    <span id="pwd" style="color:black;"></span>
+                    </td>
+               </tr>
+               <tr>
+                    <td align="right">Firstname</td>
+                    <td><input type="text" name="firstname"/><br>
+                    <span id="fname" style="color:black;"></span></td>
+               </tr>
+               <tr>
+                    <td align="right">Lastname</td>
+                    <td><input type="text" name="lastname"/><br>
+                    <span id="lname" style="color:black;"></span></td>
+               </tr>
+               <tr>
+                    <td align="right">Age</td>
+                    <td><input type="text" name="age"/>
+                    <span id="age" style="color:black;"></span></td>
+               </tr>
+               <tr>
+                    <td align="right">gender</td>
+                    <td><input type="text" name="gender"/>
+                    <span id="gender" style="color:black;"></span></td>
+               </tr>
+     		<tr>
+     			<td align="right">email</td>
+     			<td><input type="text" name="mail"/><br>
+     			<span id="email" style="color:black;"></span></td>
+     		</tr>
+               <tr>
+                    <td align="right">Alternate email</td>
+                    <td><input type="text" name="mail1"/>
+                    <span id="email1" style="color:black;"></span></td>
+               </tr>
+               
+               
+               <tr>
+                    <td align="right">Aadhar number</td>
+                    <td><input type="text" name="aadharno"/><br>
+                    <span id="aadharno" style="color:black;"></span></td>
+               </tr>
+     		<tr>
+     			<td align="right">contact no</td>
+     			<td><input type="text" name="mobile"/><br>
+     			<span id="mobile" style="color:black;"></span></td>
+     		</tr>
+     		<tr>
+                    <td align="right">address</td>
+                    <td><input type="text" name="address"/>
+                    <span id="address" style="color:black;"></span></td>
+               </tr>
+               <tr>
+                    <td align="right">city</td>
+                    <td><input type="text" name="city"/>
+                    <span id="city" style="color:black;"></span></td>
+               </tr>
+               <tr>
+                    <td align="right">state</td>
+                    <td><input type="text" name="state"/>
+                    <span id="state" style="color:black;"></span></td>
+               </tr>
+     		<tr>
+     			
+     			<td colspan="2" align="center"><input type="submit" value="Register"/></td>
+     		</tr>
+
+     	</table>
+     	
+     	
+     </form>
+     
+     </td>
+     <td>
+     
+     <img alt="bus" src="rebus.gif" height="500" width="600">
+     
+     </td>
+     </tr>
+     
+     </table>
+     </div>
+     </div>
+</body>
+</html>
