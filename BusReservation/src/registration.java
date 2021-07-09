@@ -63,7 +63,7 @@ public class registration extends HttpServlet {
 	    pstm.setString(13,state);
 	    
 	    pstm.executeUpdate();
-	    out.println("registration completed successfully");
+	    out.println("registration completed successfully .....");
 	    rd = request.getRequestDispatcher("login.html");
 	    rd.forward(request, response);
 		}
